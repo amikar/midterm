@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+I'm secure.
+<form action="/logout/" method="POST">{% csrf_token %}
+
+    <button type="logout" name="logout" value="submit-value">logout</button>
+
+</form>
+
+</body>
+</html>
